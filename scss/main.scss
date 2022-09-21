@@ -1,0 +1,904 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+* {
+  box-sizing: border-box;
+  //outline: 3px solid red;
+}
+
+/* ==========================================================================
+   HTML elements
+   ========================================================================== */
+
+body {
+  position: relative;
+  font-family: "rubik";
+}
+
+p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+h1 {
+  font-weight: 800;
+  margin: 0;
+  // padding: 1rem;
+}
+
+h2 {
+  font-weight: 800;
+  margin: 0;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Start page
+   ========================================================================== */
+
+.startPageSection {
+  background: url(/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+}
+
+.toTheMoonDiv {
+  background-color: rgb(255, 255, 255, 0.5);
+  height: 40vw;
+  width: 40vw;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border: solid 5px black;
+  max-width: 350px;
+  max-height: 350px;
+  min-width: 190px;
+  min-height: 230px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.toTheMoonHeading {
+  // background-color: red;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 1.2;
+  padding-top: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+/* Read our story */
+.readOurStoryDiv {
+  background-color: transparent;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.readOurStoryLink {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  right: 0;
+  bottom: 0;
+}
+
+.readOurStoryLink:active {
+  text-shadow: 0px 0px 3px grey;
+}
+
+/* Read our story arrow */
+.readOurStoryLink::after {
+  // background-color: green;
+  display: inline-block;
+  // content: "\2192";
+  content: "->";
+  position: absolute;
+  font-size: 1.25rem;
+  font-family: "Fira Code";
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  top: -0.25rem;
+  right: -2.25rem;
+}
+
+.readOurStoryLink:hover::after {
+  right: -3rem;
+}
+
+.arrowDown {
+  // background-color: red;
+  align-self: flex-end;
+  margin: 0 auto;
+  font-family: "Fira Code";
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  transform: rotate(90deg);
+  margin-bottom: 2rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.arrowDown::after {
+  content: "->";
+}
+
+.arrowDown:hover {
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Space Ventures section
+   ========================================================================== */
+
+.spaceVenturesSection {
+  background: url(/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+  background-size: cover;
+  background-position: 50%;
+  color: white;
+}
+
+.spaceVenturesSectionFilter {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+.flexbox {
+  // background-color: pink;
+  display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col1 {
+  // background-color: magenta;
+  width: 90%;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.col2 {
+  // background-color: red;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+
+.spaceVenturesHeadingDiv {
+  // background-color: antiquewhite;
+  height: 70px;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.spaceHeading {
+  // background-color: red;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  position: absolute;
+  z-index: 1;
+  font-size: 3.5rem;
+  padding-left: 1rem;
+}
+
+.venturesHeading {
+  // background-color: green;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 4.4rem;
+  font-weight: bold;
+  opacity: 0.5;
+  position: absolute;
+  left: 55px;
+  top: 17px;
+  padding-left: 1rem;
+}
+
+.floatingQuote {
+  padding: 40px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+blockquote {
+  quotes: "“""”""‘""’";
+  margin: 0;
+  position: relative;
+}
+
+blockquote:before {
+  color: rgb(255, 255, 255, 0.2);
+  content: open-quote;
+  font-size: 7rem;
+  // line-height: 1rem;
+  // margin-right: -2rem;
+  // vertical-align: -2.8rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+
+blockquote:after {
+  color: rgb(255, 255, 255, 0.2);
+  content: close-quote;
+  font-size: 7rem;
+  // line-height: 1rem;
+  // margin-left: -.25rem;
+  // vertical-align: -1.4rem;
+  position: absolute;
+  bottom: -3.5rem;
+  right: 2rem;
+}
+
+/* Hidden on mobile */
+.bigQuote {
+  display: none;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 300;
+  width: 60%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  background: -webkit-linear-gradient(top left, hsl(331, 100%, 41%), white, hsl(331, 100%, 41%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.5;
+}
+
+/* Hidden on mobile */
+.majorTomImage {
+  display: none;
+  height: 250px;
+  float: right;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  transform: rotate(5deg);
+}
+
+.farAboveTheMoonBreak {
+  display: block;
+}
+
+/* ==========================================================================
+   Read more about Major Tom
+   ========================================================================== */
+
+.readMoreAboutMajorTomLink {
+  color: hsl(331, 100%, 41%);
+  padding: 1rem;
+  text-decoration: underline;
+  position: relative;
+}
+
+.readMoreAboutMajorTomLink:visited {
+  color: hsl(331, 100%, 41%);
+}
+
+.readMoreAboutMajorTomLink:active {
+  text-shadow: 0px 0px 3px #fd1384;
+}
+
+/* Read more about major tom arrow */
+.readMoreAboutMajorTomLink::after {
+  display: inline-block;
+  content: "->";
+  position: absolute;
+  font-size: 1.25rem;
+  font-family: "Fira Code";
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  top: 0.8rem;
+  right: -1.3rem;
+}
+
+.readMoreAboutMajorTomLink:hover::after {
+  right: -2.05rem;
+}
+
+/* ==========================================================================
+   Navigation button
+   ========================================================================== */
+
+// INCOMPLETE RENAME BEFORE AFTER
+
+/* Button element */
+#burger {
+  // background-color: red;
+  width: 45px;
+  height: 35px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  position: fixed;
+  z-index: 3;
+  right: 40px;
+  top: 20px;
+}
+
+/* Middle line */
+#burger span {
+  width: 35px;
+  height: 5px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  display: block;
+  background-color: black;
+  position: relative;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Top and bottom lines */
+#burger span::before,
+#burger span::after {
+  display: block;
+  content: '';
+  background-color: black;
+  width: 35px;
+  height: 5px;
+  position: absolute;
+  top: -12px;
+  left: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in;
+}
+
+#burger span::before {
+  top: 12px;
+}
+
+/* Button animation - open */
+#burger.open span::before {
+  transform: rotate(45deg);
+  top: -1px;
+}
+
+#burger.open span::after {
+  transform: rotate(-45deg);
+  top: -1px;
+}
+
+#burger.open span {
+  background-color: transparent;
+}
+
+/* Makes all lines move to align on hover  */
+#burger:hover span {
+  left: 2.5px;
+}
+
+#burger:hover span::before {
+  left: 0px;
+}
+
+#burger:hover span::after {
+  left: 0px;
+}
+
+/* Makes the cross grow on hover */
+#burger.open:hover span {
+  left: 1.25px;
+}
+
+#burger.open:hover span::before {
+  left: 2.5px;
+  width: 37.5px;
+}
+
+#burger.open:hover span::after {
+  left: 2.5px;
+  width: 37.5px;
+}
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+
+#menuOpen {
+  background-color: rgb(255, 255, 255, 0.7);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: none;
+  // text-transform: uppercase;
+  // text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+
+li {
+  // background-color: red;
+  // height: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 3px 1px rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Underline for menu items */
+.underline {
+  text-decoration: none;
+  position: relative;
+}
+
+.underline:after {
+  display: none;
+  position: absolute;
+  background: #fd1384;
+  content: '';
+  height: 10px;
+  border-radius: 5px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px;
+  /* center - use with adjusting width */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* Shows underline on hover */
+.underline:hover:after {
+  display: block;
+}
+
+/* ==========================================================================
+   Cookies
+   ========================================================================== */
+
+#cookieDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: auto;
+  background-color: rgb(2, 6, 31);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.cookieCopy {
+  // background-color: green;
+  align-self: center;
+  flex: 50%;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(177, 0, 91);
+  // color: #CD0067;
+  text-shadow: 0px 0px 3px #fd1384;
+}
+
+#accept {
+  align-self: center;
+  // align-items: flex-start;
+  background-color: rgb(8, 17, 96);
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 1rem;
+}
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+@media screen and (min-width: 500px) {
+  .col1 {
+    width: 70%;
+  }
+
+  .col2 {
+    width: 70%;
+  }
+
+  #cookieDiv {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .toTheMoonDiv {
+    align-items: center;
+  }
+
+  .toTheMoonHeading {
+    font-size: 4.5rem;
+  }
+
+  .spaceVenturesHeadingDiv {
+    height: 150px;
+  }
+
+  .spaceHeading {
+    // background-color: red;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    z-index: 1;
+    font-size: 5.5rem;
+    padding-left: 1rem;
+  }
+
+  .venturesHeading {
+    // background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 6.9rem;
+    font-weight: bold;
+    opacity: 0.5;
+    position: absolute;
+    left: 8px;
+    top: 40px;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .toTheMoonDiv {
+    top: 100px;
+    left: 100px;
+  }
+
+  .toTheMoonHeading {
+    font-size: 5rem;
+  }
+
+  .readOurStoryDiv {
+    text-align: right;
+    /* Stops the arrow from going outside the box */
+    padding-right: 4rem;
+  }
+
+  /* Space Ventures section */
+  .flexbox {
+    flex-direction: row;
+    column-gap: 15%;
+  }
+
+  .col1 {
+    // flex-shrink: 1;
+    width: 100%;
+    padding-top: 2%;
+    margin-left: 8%;
+  }
+
+  .col2 {
+    margin-right: 8%;
+    width: 100%;
+  }
+
+  .spaceVenturesHeadingDiv {
+    margin-bottom: 7rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  /* Desktop only */
+  .bigQuote {
+    display: block;
+  }
+
+  .majorTomImage {
+    display: block;
+  }
+
+  .farAboveTheMoonBreak {
+    display: none;
+  }
+
+  /* Cookie accept button */
+  #accept {
+    margin-right: 2rem;
+  }
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
