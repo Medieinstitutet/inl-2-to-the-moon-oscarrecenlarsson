@@ -43,7 +43,7 @@
     </nav>
   </div>
 
-  <!-- Start Section -->
+  <!-- Start section -->
   <section class="startPageSection">
 
     <div class="toTheMoonDiv">
@@ -57,7 +57,7 @@
 
   </section>
 
-  <!-- Space Ventures Section -->
+  <!-- Space ventures section -->
   <section class="spaceVenturesSection" id="spaceVenturesSectionID">
     <div class="spaceVenturesSectionFilter"></div>
     <div class="flexbox">
@@ -80,26 +80,22 @@
           capsule if you dare. This is Major Tom to Ground Control. I'm stepping through the door.
         </p>
 
-        <!-- <div class="floatingDiv"> -->
         <blockquote class="floatingQuote">
           And I'm floating in a most peculiar way.
           And the stars look very different today.
           For here.
         </blockquote>
-        <!-- </div> -->
       </div>
 
       <div class="col2">
-
         <div class="bigQuote">
           Persistence is very important. You should not give up unless you are forced to give up.
         </div>
 
         <div>
-
           <p>Am I sitting in a tin can. Far above the world. Planet Earth is blue. And there's nothing I can do.
             Though I'm past one hundred thousand miles. I'm feeling verystill.
-            <img class="majorTomImage" src="/assets/photos/major_tom.jpg" alt="Major Tom" loading="lazy">
+            <img class="majorTomImage clearfix" src="/assets/photos/major_tom.jpg" alt="Major Tom" loading="lazy">
             And I think my spaceship. knows which way to go. Tell my wife I love her very much she knows.
             <br><br>
             Ground Control to Major Tom. Your circuit's dead, there's something wrong. Can you hear me, Major Tom? Can
@@ -129,17 +125,16 @@
   </footer>
 
   <!-- Scripts -->
-  <!-- Navigation Button Animation Open/Close -->
   <script>
+
+    // Navigation button animation open/close
     const menuBtn = document.querySelector('#burger');
     menuBtn.addEventListener('click', toggleMenuClass);
     function toggleMenuClass() {
       menuBtn.classList.toggle('open');
-    }
-  </script>
+    };
 
-  <!-- Toggle Menu -->
-  <script>
+    // Toggle menu
     const menuOpen = document.getElementById("menuOpen");
     const openBtn = document.getElementById("burger");
     openBtn.onclick = function () {
@@ -149,10 +144,8 @@
         menuOpen.style.display = "none";
       }
     };
-  </script>
 
-  <!-- Close Cookies -->
-  <script>
+    // Close cookies
     const footerDiv = document.getElementById("cookieDiv");
     const acceptBtn = document.getElementById("accept");
     acceptBtn.onclick = function () {

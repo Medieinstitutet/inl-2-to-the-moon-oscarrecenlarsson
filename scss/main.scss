@@ -7,6 +7,8 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+@forward 'globals';
+
 * {
   box-sizing: border-box;
   //outline: 3px solid red;
@@ -19,6 +21,7 @@
 body {
   position: relative;
   font-family: "rubik";
+  min-height: 100%;
 }
 
 p {
@@ -289,6 +292,12 @@ blockquote:after {
   padding-top: 1rem;
   padding-left: 1rem;
   transform: rotate(5deg);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .farAboveTheMoonBreak {
@@ -656,6 +665,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  min-height: 100%;
 }
 
 /*
