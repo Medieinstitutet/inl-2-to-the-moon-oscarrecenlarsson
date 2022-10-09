@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>To the moon</title>
+  <meta name="description" content="To the moon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Rubik:ital,wght@0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="dist/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <button id="burger" aria-label="Menu">
+    <span></span>
+  </button>
+
+  <div id="menuOpen">
+    <nav>
+      <ul>
+        <li class="underline">Our Story</li>
+        <li class="underline">Space Ventures</li>
+        <li class="underline">About Major Tom</li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Start section -->
+  <section class="startPageSection">
+
+    <div class="toTheMoonDiv">
+      <h1 class="toTheMoonHeading">To the moon</h1>
+      <div class="readOurStoryDiv">
+        <a class="readOurStoryLink" href="">Read our story</a>
+      </div>
+    </div>
+
+    <a class="arrowDown" href="#spaceVenturesSectionID" aria-label="Next section"></a>
+
+  </section>
+
+  <!-- Space ventures section -->
+  <section class="spaceVenturesSection" id="spaceVenturesSectionID">
+    <div class="spaceVenturesSectionFilter"></div>
+    <div class="flexbox">
+      <div class="col1">
+        <div class="spaceVenturesHeadingDiv">
+          <h1 class="spaceHeading">Space </h1>
+          <h1 class="venturesHeading">Ventures</h1>
+        </div>
+
+        <h2>
+          Ground Control to Major Tom
+        </h2>
+
+        <p>Ground Control to Major Tom. Take your protein pills and put your helmet on. Ground Control to Major Tom
+          (ten,
+          nine, eight, seven, six). Commencing countdown, engines on (five, four, three). Check ignition and may God's
+          love be with you (two, one, liftoff). This is Ground Control to Major Tom.
+          <br><br>
+          You've really made the grade. And the papers want to know whose shirts you wear. Now it's time to leave the
+          capsule if you dare. This is Major Tom to Ground Control. I'm stepping through the door.
+        </p>
+
+        <blockquote class="floatingQuote">
+          And I'm floating in a most peculiar way.
+          And the stars look very different today.
+          For here.
+        </blockquote>
+      </div>
+
+      <div class="col2">
+        <div class="bigQuote">
+          Persistence is very important. You should not give up unless you are forced to give up.
+        </div>
+
+        <div>
+          <p>Am I sitting in a tin can. Far above the world. Planet Earth is blue. And there's nothing I can do.
+            Though I'm past one hundred thousand miles. I'm feeling verystill.
+            <img class="majorTomImage clearfix" src="assets/photos/major_tom_lowRes.jpg" alt="Major Tom" loading="lazy">
+            And I think my spaceship. knows which way to go. Tell my wife I love her very much she knows.
+            <br><br>
+            Ground Control to Major Tom. Your circuit's dead, there's something wrong. Can you hear me, Major Tom? Can
+            you hear me, Major Tom? Can you hear me, Major Tom? Can you "Here am I floating 'round my tin can.
+            <br class="farAboveTheMoonBreak">
+            Far above the moon.
+            <br>
+            Planet Earth is blue.
+            <br>
+            And there's nothing I can do.
+          </p>
+        </div>
+
+        <a class="readMoreAboutMajorTomLink" href="">Read more about Major Tom</a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="cookieDiv">
+      <div class="cookieCopy">
+        I don’t know where I’m going from here, but I promise it won’t be boring. You should accept cookies.
+      </div>
+      <button id="accept">Accept</button>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+
+    // Navigation button animation open/close
+    const menuBtn = document.querySelector('#burger');
+    menuBtn.addEventListener('click', toggleMenuClass);
+    function toggleMenuClass() {
+      menuBtn.classList.toggle('open');
+    };
+
+    // Toggle menu
+    const menuOpen = document.getElementById("menuOpen");
+    const openBtn = document.getElementById("burger");
+    openBtn.onclick = function () {
+      if (menuOpen.style.display !== "block") {
+        menuOpen.style.display = "block";
+      } else {
+        menuOpen.style.display = "none";
+      }
+    };
+
+    // Close cookies
+    const footerDiv = document.getElementById("cookieDiv");
+    const acceptBtn = document.getElementById("accept");
+    acceptBtn.onclick = function () {
+      if (footerDiv.style.display !== "none") {
+        footerDiv.style.display = "none";
+      }
+    };
+  </script>
+
+  <!-- Bolierplate Scripts -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
