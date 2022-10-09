@@ -236,11 +236,12 @@ section {
 .floatingQuote {
   padding: 40px;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.375rem;
+  font-weight: 300;
 }
 
 blockquote {
-  quotes: "“""”""‘""’";
+  quotes: "“" "”" "‘" "’";
   margin: 0;
   position: relative;
 }
@@ -273,7 +274,7 @@ blockquote:after {
 .bigQuote {
   display: none;
   font-style: italic;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 300;
   width: 60%;
   margin-top: 15%;
@@ -450,7 +451,7 @@ blockquote:after {
   z-index: 2;
   display: none;
   // text-transform: uppercase;
-  // text-align: center;
+  text-align: center;
 }
 
 ul {
@@ -458,15 +459,18 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
+  padding-top: 10vh;
   text-transform: uppercase;
   justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 li {
   // background-color: red;
   // height: 100px;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #000;
   text-shadow: 0 3px 1px rgb(0, 0, 0, 0.2);
@@ -612,6 +616,16 @@ li {
     text-align: right;
     /* Stops the arrow from going outside the box */
     padding-right: 4rem;
+  }
+
+  /* Menu open */
+  ul {
+    height: 100vh;
+    padding-top: 0;
+  }
+
+  li {
+    font-size: 3.4375rem;
   }
 
   /* Space Ventures section */
